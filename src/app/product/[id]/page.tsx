@@ -83,7 +83,7 @@ export default function ProductPage({ params }: ProductPageProps) {
       <div className="w-full max-w-xl bg-white/90 rounded-2xl shadow-2xl p-8 relative border border-purple-100">
         <button
           onClick={handleBack}
-          className="absolute left-6 top-6 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-400 text-white font-semibold shadow hover:scale-105 transition-transform"
+          className="left-6 top-6 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-400 text-white font-semibold shadow hover:scale-105 transition-transform"
         >
           ← Назад
         </button>
@@ -106,7 +106,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             <h1 className="text-3xl sm:text-4xl font-extrabold mb-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400">
               {product.name}
             </h1>
-            <div className="text-2xl text-gray-800 mb-4 font-bold">{product.price.toLocaleString('ru-RU')} ₽</div>
+            <div className="text-2xl text-gray-800 mb-4 font-bold text-center">{product.price.toLocaleString('ru-RU')} ₽</div>
             <p className="text-gray-600 text-center mb-4 text-lg">{product.description}</p>
           </div>
         </div>
